@@ -1,7 +1,7 @@
 const { response, request } = require('express');
 
 const getUsers = (req = request, res = response) => {
-	const { name = 'no Name', q, saludos = 'Buenas', apiKey } = req.query;
+	const { name = 'Digite name', q, saludos = 'Buenas', apiKey } = req.query;
 	res.json({
 		status: 'ok',
 		id: 1,
